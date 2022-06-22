@@ -1,14 +1,31 @@
 import pyautogui as py
 from spotlight import spotlight
 import time
+import sys
 
-"""Automation of the System Preferences. settings(String) accepts one argument as a string."""
+"""Automation of the System Preferences. settings(String) accepts one argument as a string from the cli."""
+
+PASSWORD = "Apple"
+
+
+def appleid():
+    spotlight("System Preferences")
+    time.sleep(2)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(294, 236)
+    py.click()
+    time.sleep(3)
+    return
 
 
 def wifi():
     spotlight("System Preferences")
     time.sleep(2)
-    py.click(568, 528)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(281, 566)
+    py.click()
     time.sleep(3)
     return
 
@@ -16,7 +33,9 @@ def wifi():
 def bluetooth():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(648, 527)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 281)
     py.click()
     time.sleep(3)
     return
@@ -25,7 +44,9 @@ def bluetooth():
 def general():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(482, 322)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(276, 434)
     py.click()
     time.sleep(3)
     return
@@ -34,7 +55,9 @@ def general():
 def desktop_screen_saver():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(566, 323)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(284, 325)
     py.click()
     time.sleep(3)
     return
@@ -43,7 +66,9 @@ def desktop_screen_saver():
 def dock_menu_bar():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(648, 325)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(281, 369)
     py.click()
     time.sleep(3)
     return
@@ -52,7 +77,9 @@ def dock_menu_bar():
 def siri():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(812, 323)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(275, 743)
     py.click()
     time.sleep(3)
     return
@@ -61,7 +88,9 @@ def siri():
 def language_region():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(981, 317)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(280, 501)
     py.click()
     time.sleep(3)
     return
@@ -70,7 +99,9 @@ def language_region():
 def notifications_focus():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(1056, 322)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(284, 588)
     py.click()
     time.sleep(3)
     return
@@ -79,7 +110,9 @@ def notifications_focus():
 def internet_accounts():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(484, 414)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(286, 457)
     py.click()
     time.sleep(3)
     return
@@ -88,16 +121,24 @@ def internet_accounts():
 def passwords():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(566, 410)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(283, 610)
     py.click()
     time.sleep(3)
+    py.write(PASSWORD)
+    py.press("Return")
     return
 
 
 def wallet_apple_pay():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(649, 411)
+    py.click(259, 7)
+    time.sleep(1)
+    py.press("w")
+    time.sleep(1)
+    py.moveTo(278, 825)
     py.click()
     time.sleep(3)
     return
@@ -106,7 +147,11 @@ def wallet_apple_pay():
 def users_groups():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(730, 412)
+    py.click(259, 7)
+    time.sleep(1)
+    py.press("u")
+    time.sleep(1)
+    py.moveTo(277, 808)
     py.click()
     time.sleep(3)
     return
@@ -115,7 +160,9 @@ def users_groups():
 def accessibility():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(813, 412)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 214)
     py.click()
     time.sleep(3)
     return
@@ -124,7 +171,9 @@ def accessibility():
 def screen_time():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(896, 412)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 677)
     py.click()
     time.sleep(3)
     return
@@ -133,7 +182,9 @@ def screen_time():
 def extensions():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(974, 413)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 392)
     py.click()
     time.sleep(3)
     return
@@ -142,7 +193,9 @@ def extensions():
 def security_privacy():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(1058, 417)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 699)
     py.click()
     time.sleep(3)
     return
@@ -151,7 +204,9 @@ def security_privacy():
 def software_update():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(485, 523)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 765)
     py.click()
     time.sleep(3)
     return
@@ -160,7 +215,9 @@ def software_update():
 def sound():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(731, 528)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 786)
     py.click()
     time.sleep(3)
     return
@@ -169,7 +226,12 @@ def sound():
 def touchid():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(813, 523)
+    py.click(259, 7)
+    time.sleep(1)
+    py.press("t")
+    py.press("o")
+    time.sleep(1)
+    py.moveTo(278, 808)
     py.click()
     time.sleep(3)
     return
@@ -178,7 +240,9 @@ def touchid():
 def keyboard():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(893, 523)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 480)
     py.click()
     time.sleep(3)
     return
@@ -187,7 +251,12 @@ def keyboard():
 def trackpad():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(974, 523)
+    py.click(259, 7)
+    time.sleep(1)
+    py.press("t")
+    py.press("r")
+    time.sleep(1)
+    py.moveTo(278, 810)
     py.click()
     time.sleep(3)
     return
@@ -196,7 +265,9 @@ def trackpad():
 def mouse():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(1058, 525)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 545)
     py.click()
     time.sleep(3)
     return
@@ -205,7 +276,9 @@ def mouse():
 def displays():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(483, 613)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 346)
     py.click()
     time.sleep(3)
     return
@@ -214,7 +287,9 @@ def displays():
 def printers_scanners():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(569, 617)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 632)
     py.click()
     time.sleep(3)
     return
@@ -223,7 +298,9 @@ def printers_scanners():
 def battery():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(647, 615)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 259)
     py.click()
     time.sleep(3)
     return
@@ -232,7 +309,9 @@ def battery():
 def date_time():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(729, 615)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 301)
     py.click()
     time.sleep(3)
     return
@@ -241,7 +320,9 @@ def date_time():
 def sharing():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(810, 615)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 721)
     py.click()
     time.sleep(3)
     return
@@ -250,7 +331,12 @@ def sharing():
 def time_machine():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(895, 615)
+    py.click(259, 7)
+    time.sleep(1)
+    py.press("t")
+    py.press("i")
+    time.sleep(1)
+    py.moveTo(278, 810)
     py.click()
     time.sleep(3)
     return
@@ -259,7 +345,12 @@ def time_machine():
 def startup_disk():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(975, 615)
+    py.click(259, 7)
+    time.sleep(1)
+    py.press("s")
+    py.press("t")
+    time.sleep(1)
+    py.moveTo(278, 808)
     py.click()
     time.sleep(3)
     return
@@ -268,14 +359,18 @@ def startup_disk():
 def profiles():
     spotlight("System Preferences")
     time.sleep(2)
-    py.moveTo(1056, 615)
+    py.click(259, 7)
+    time.sleep(1)
+    py.moveTo(278, 655)
     py.click()
     time.sleep(3)
     return
 
 
 def settings(setting):
-    if setting == "General" or setting == "general":
+    if setting == "AppleID" or setting == "appleid" or setting == "appleID" or setting == "Appleid":
+        appleid()
+    elif setting == "General" or setting == "general":
         general()
     elif setting == "Desktop and Screen Saver" or setting == "desktop and screen saver" or setting == "Desktop & Screen Saver" or setting == "desktop & screen saver":
         desktop_screen_saver()
@@ -340,4 +435,4 @@ def settings(setting):
     return
 
 
-# settings("Arg: String")
+settings(setting=sys.argv[1])
