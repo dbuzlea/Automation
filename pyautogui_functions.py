@@ -11,4 +11,3 @@ List of available pyautogui functions:
 # print(returnedText)  # returns text when 'OK' is selected, None when 'Cancel' is selected.
 password = py.password(text='Enter password:', title='Password', default='', mask='*')
 print(password)  # return password
-
