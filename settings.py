@@ -9,6 +9,7 @@ PASSWORD = "Apple"
 
 
 def appleid():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -20,6 +21,7 @@ def appleid():
 
 
 def wifi():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -31,6 +33,7 @@ def wifi():
 
 
 def bluetooth():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -42,6 +45,7 @@ def bluetooth():
 
 
 def general():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -53,6 +57,7 @@ def general():
 
 
 def desktop_screen_saver():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -64,6 +69,7 @@ def desktop_screen_saver():
 
 
 def dock_menu_bar():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -75,6 +81,7 @@ def dock_menu_bar():
 
 
 def siri():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -86,6 +93,7 @@ def siri():
 
 
 def language_region():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -97,6 +105,7 @@ def language_region():
 
 
 def notifications_focus():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -108,6 +117,7 @@ def notifications_focus():
 
 
 def internet_accounts():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -119,6 +129,7 @@ def internet_accounts():
 
 
 def passwords():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -132,6 +143,7 @@ def passwords():
 
 
 def wallet_apple_pay():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -145,6 +157,7 @@ def wallet_apple_pay():
 
 
 def users_groups():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -158,6 +171,7 @@ def users_groups():
 
 
 def accessibility():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -169,6 +183,7 @@ def accessibility():
 
 
 def screen_time():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -180,6 +195,7 @@ def screen_time():
 
 
 def extensions():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -191,6 +207,7 @@ def extensions():
 
 
 def security_privacy():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -202,6 +219,7 @@ def security_privacy():
 
 
 def software_update():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -213,6 +231,7 @@ def software_update():
 
 
 def sound():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -224,6 +243,7 @@ def sound():
 
 
 def touchid():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -238,6 +258,7 @@ def touchid():
 
 
 def keyboard():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -249,6 +270,7 @@ def keyboard():
 
 
 def trackpad():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -263,6 +285,7 @@ def trackpad():
 
 
 def mouse():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -274,6 +297,7 @@ def mouse():
 
 
 def displays():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -285,6 +309,7 @@ def displays():
 
 
 def printers_scanners():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -296,6 +321,7 @@ def printers_scanners():
 
 
 def battery():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -307,6 +333,7 @@ def battery():
 
 
 def date_time():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -318,6 +345,7 @@ def date_time():
 
 
 def sharing():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -329,6 +357,7 @@ def sharing():
 
 
 def time_machine():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -343,6 +372,7 @@ def time_machine():
 
 
 def startup_disk():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -357,6 +387,7 @@ def startup_disk():
 
 
 def profiles():
+    time.sleep(1)
     spotlight("System Preferences")
     time.sleep(2)
     py.click(259, 7)
@@ -369,70 +400,132 @@ def profiles():
 
 def settings(setting):
     if setting == "AppleID" or setting == "appleid" or setting == "appleID" or setting == "Appleid":
+        print(f"Opening {setting} pane...")
         appleid()
+        print(f"{setting} pane successfully launched")
     elif setting == "General" or setting == "general":
+        print(f"Opening {setting} pane...")
         general()
+        print(f"{setting} pane successfully launched")
     elif setting == "Desktop and Screen Saver" or setting == "desktop and screen saver" or setting == "Desktop & Screen Saver" or setting == "desktop & screen saver":
+        print(f"Opening {setting} pane...")
         desktop_screen_saver()
+        print(f"{setting} pane successfully launched")
     elif setting == "Dock and Menu Bar" or setting == "dock and menu bar" or setting == "Dock & Menu Bar" or setting == "dock & menu bar":
+        print(f"Opening {setting} pane...")
         dock_menu_bar()
+        print(f"{setting} pane successfully launched")
     elif setting == "Siri" or setting == "siri":
+        print(f"Opening {setting} pane...")
         siri()
+        print(f"{setting} pane successfully launched")
     elif setting == "Language and Region" or setting == "language and region" or setting == "Language & Region" or setting == "language & region":
+        print(f"Opening {setting} pane...")
         language_region()
+        print(f"{setting} pane successfully launched")
     elif setting == "Notifications and focus" or setting == "notifications and focus" or setting == "Notifications & Focus" or setting == "notifications & focus":
+        print(f"Opening {setting} pane...")
         notifications_focus()
+        print(f"{setting} pane successfully launched")
     elif setting == "Internet Accounts" or setting == "internet accounts":
+        print(f"Opening {setting} pane...")
         internet_accounts()
+        print(f"{setting} pane successfully launched")
     elif setting == "Passwords" or setting == "passwords":
+        print(f"Opening {setting} pane...")
         passwords()
+        print(f"{setting} pane successfully launched")
     elif setting == "Wallet and Apple Pay" or setting == "wallet and apple pay" or setting == "Wallet & Apple Pay" or setting == "wallet & apple pay":
+        print(f"Opening {setting} pane...")
         wallet_apple_pay()
+        print(f"{setting} pane successfully launched")
     elif setting == "Users and Groups" or setting == "users and groups" or setting == "Users & Groups" or setting == "users & groups":
+        print(f"Opening {setting} pane...")
         users_groups()
+        print(f"{setting} pane successfully launched")
     elif setting == "Accessibility" or setting == "accessibility":
+        print(f"Opening {setting} pane...")
         accessibility()
+        print(f"{setting} pane successfully launched")
     elif setting == "Screen Time" or setting == "screen time":
+        print(f"Opening {setting} pane...")
         screen_time()
+        print(f"{setting} pane successfully launched")
     elif setting == "Extensions" or setting == "extensions":
+        print(f"Opening {setting} pane...")
         extensions()
+        print(f"{setting} pane successfully launched")
     elif setting == "Security and Privacy" or setting == "security and privacy" or setting == "Security & Privacy" or setting == "security & privacy":
+        print(f"Opening {setting} pane...")
         security_privacy()
+        print(f"{setting} pane successfully launched")
     elif setting == "Software Update" or setting == "software update":
+        print(f"Opening {setting} pane...")
         software_update()
+        print(f"{setting} pane successfully launched")
     elif setting == "Wifi" or setting == "wifi":
+        print(f"Opening {setting} pane...")
         wifi()
+        print(f"{setting} pane successfully launched")
     elif setting == "Bluetooth" or setting == "bluetooth":
+        print(f"Opening {setting} pane...")
         bluetooth()
+        print(f"{setting} pane successfully launched")
     elif setting == "Sound" or setting == "sound":
+        print(f"Opening {setting} pane...")
         sound()
+        print(f"{setting} pane successfully launched")
     elif setting == "Touch ID" or setting == "touch id":
+        print(f"Opening {setting} pane...")
         touchid()
+        print(f"{setting} pane successfully launched")
     elif setting == "Keyboard" or setting == "keyboard":
+        print(f"Opening {setting} pane...")
         keyboard()
+        print(f"{setting} pane successfully launched")
     elif setting == "Trackpad" or setting == "trackpad":
+        print(f"Opening {setting} pane...")
         trackpad()
+        print(f"{setting} pane successfully launched")
     elif setting == "Mouse" or setting == "mouse":
+        print(f"Opening {setting} pane...")
         mouse()
+        print(f"{setting} pane successfully launched")
     elif setting == "Displays" or setting == "displays":
+        print(f"Opening {setting} pane...")
         displays()
+        print(f"{setting} pane successfully launched")
     elif setting == "Printers and Scanners" or setting == "printers and scanners" or setting == "printers & scanners" or setting == "Printers & Scanners":
+        print(f"Opening {setting} pane...")
         printers_scanners()
+        print(f"{setting} pane successfully launched")
     elif setting == "Battery" or setting == "battery":
+        print(f"Opening {setting} pane...")
         battery()
+        print(f"{setting} pane successfully launched")
     elif setting == "Date and Time" or setting == "date and time" or setting == " Date & Time" or setting == "date & time":
+        print(f"Opening {setting} pane...")
         date_time()
+        print(f"{setting} pane successfully launched")
     elif setting == "Sharing" or setting == "sharing":
+        print(f"Opening {setting} pane...")
         sharing()
+        print(f"{setting} pane successfully launched")
     elif setting == "Time Machine" or setting == "time machine":
+        print(f"Opening {setting} pane...")
         time_machine()
+        print(f"{setting} pane successfully launched")
     elif setting == "Startup Disk" or setting == "startup disk":
+        print(f"Opening {setting} pane...")
         startup_disk()
+        print(f"{setting} pane successfully launched")
     elif setting == "Profiles" or setting == "profiles":
+        print(f"Opening {setting} pane...")
         profiles()
+        print(f"{setting} pane successfully launched")
     else:
-        print("That is not a valid setting. Please enter in the exact setting exactly how it's spelled.")
+        print(f"{setting} is not a valid setting. Please enter in the exact setting exactly how it's spelled.")
     return
 
 
-settings(setting=sys.argv[1])
+settings(sys.argv[1])

@@ -1,3 +1,5 @@
+import sys
+
 import pyautogui as py
 
 
@@ -10,4 +12,4 @@ def spotlight(text):
     return
 
 
-# spotlight()
+spotlight(text=sys.argv[1])
