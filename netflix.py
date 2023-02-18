@@ -84,8 +84,8 @@ def log_out():
 
 #  ===================================================================================================
 #  Tests:
-log_out()
+# log_out()
 # open_safari()
 # open_netflix()
-# log_in()
+log_in()
 # watch_recent_in_continue_watching()
