@@ -12,8 +12,8 @@ the continue watching list.
 
 #  ===================================================================================================
 #  Global:
-USERNAME = "ddbuzlea31@gmail.com"
-PASS = "Italia237"
+USERNAME = "emailAddress@email.com"
+PASS = "Password"
 py.FAILSAFE = True
 logging.basicConfig(filename='netflix.log', level=logging.INFO)
 
