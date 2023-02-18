@@ -5,7 +5,8 @@ import sys
 
 """Automation of the System Preferences. settings(String) accepts one argument as a string from the cli."""
 
-PASSWORD = "Apple"
+# Enter in your Mac password in the open string: 
+PASSWORD = ""
 
 
 def appleid():
@@ -397,6 +398,11 @@ def profiles():
     time.sleep(3)
     return
 
+
+"""
+Main function that runs when the program is executed. 
+Take in 1 argument "String" and opens the setting that matches:
+"""
 
 def settings(setting):
     if setting == "AppleID" or setting == "appleid" or setting == "appleID" or setting == "Appleid":
