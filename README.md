@@ -11,8 +11,9 @@ All programs were developed on a M1 13" MacBook Pro (2560 × 1600)
 # Requirements:
 
 * Must be running macOS 13.0 or later 
-* Because the UI testing relies on pyautogui display coordinates to navigate, System Settings window must be placed in the upper-left most corner of your screen in order for the tests to work (see image below).
+* Because the UI testing relies on PyAutoGUI display coordinates to navigate, your System Settings window must be placed in the upper-left most corner of your screen in order for the tests to work (see image below).
 
+<img width="1440" alt="Screenshot 2023-02-26 at 3 01 59 AM" src="https://user-images.githubusercontent.com/64452847/221402098-84bdbffb-a93a-4e48-858e-a8c4e085a20e.png">
 
 # Steps to set up environment:
 
