@@ -6,7 +6,7 @@ Selenium and PyAutoGUI frameworks for MacOS devices.
 Each test case or suite can be ran individually from Terminal, or you can run all test suites from the console_test_suites.py file.
 Feel free to explore or submit any ideas via pull request! 
 
-All programs were developed on an M1 13" MacBook Pro (2560 × 1600)
+All programs were developed on an M1 13" MacBook Pro (2560 × 1600). If the tests don't navigate correctly to the right areas on your machine, create a new branch from the main and name it after your machine model with the proper display coordinates.
 
 # Requirements:
 
