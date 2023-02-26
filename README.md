@@ -66,5 +66,5 @@ Consist of mostly experimental files that utilizes both selenium and pyautogui.
 * To add a component to /System\ Settings/ dir please use the component_template.txt for continuity. 
  
 
-If you encounter any issues while folling the steps provided please let me know. Enjoy!
+If you encounter any issues while following the steps provided please submit via issue tab to let me know. Enjoy!
 
