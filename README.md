@@ -8,6 +8,9 @@ Feel free to explore or submit any ideas via pull request!
 
 All programs were developed on an M1 13" MacBook Pro (2560 × 1600). If the tests don't navigate correctly to the right areas on your machine, create a new branch from the main and name it after your machine model with the proper display coordinates.
 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/64452847/221402853-3140e0b8-96d1-4383-bb3d-e1f48a302114.gif)
+
+
 # Requirements:
 
 * Must be running macOS 13.0 or later 
