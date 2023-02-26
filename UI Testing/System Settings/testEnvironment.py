@@ -156,7 +156,7 @@ class TestEnvironment:
 
 
 	@staticmethod	
-	def runTestEnvironment():
+	def run_all_test_suites():
 		print("===============================================================")
 		print("===============================================================")
 
@@ -272,7 +272,7 @@ Uncomment to run full program,
 comment out to run individual test cases 
 in python interpretor.
 """
-# i.runTestEnvironment()
+# i.run_all_test_suites()
 
 
 
