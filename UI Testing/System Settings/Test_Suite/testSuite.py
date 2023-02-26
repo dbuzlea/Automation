@@ -29,12 +29,6 @@ from WiFi.wifiTestSuite import WiFi
 """
 TODO: Fix Accessibility  
 
-Error: Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/Users/danielbuzlea/Desktop/code/Programs/Python/app/Automation Projects/Automation/UI Testing/System Settings/Test_Suite/testSuite.py", line 47, in run_accessibility_test_suite
-    Accessibility.accessibilityTestSuite()
-NameError: name 'Accessibility' is not defined
-
 """
 
 
