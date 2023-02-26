@@ -26,7 +26,16 @@ from Wallpaper.wallpaperTestSuite import Wallpaper
 from WiFi.wifiTestSuite import WiFi
 
 
+"""
+TODO: Fix Accessibility  
 
+Error: Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/danielbuzlea/Desktop/code/Programs/Python/app/Automation Projects/Automation/UI Testing/System Settings/testEnvironment.py", line 47, in run_accessibility_test_suite
+    Accessibility.accessibilityTestSuite()
+NameError: name 'Accessibility' is not defined
+
+"""
 
 
 
@@ -34,97 +43,120 @@ TIME_LIMIT = 5
 
 class TestEnvironment:
 
-	def run_battery_test_suite(self):
+	@staticmethod
+	def run_battery_test_suite():
 		Battery.batteryTestSuite()
 		return
 
-	def run_appleID_test_suite(self):
+	@staticmethod	
+	def run_appleID_test_suite():
 		AppleID.appleIDTestSuite()
 		return
 
+	@staticmethod	
 		# TODO:
-	def run_accessibility_test_suite(self):
+	def run_accessibility_test_suite():
 		Accessibility.accessibilityTestSuite()
 		return
 
-	def run_appearance_test_suite(self):
+	@staticmethod	
+	def run_appearance_test_suite():
 		Appearance.appearanceTestSuite()
 		return
 
-	def run_icloud_test_suite(self):
+	@staticmethod	
+	def run_icloud_test_suite():
 		iCloud.icloudTestSuite()
 		return
 
-	def run_bluetooth_test_suite(self):
+	@staticmethod	
+	def run_bluetooth_test_suite():
 		Bluetooth.bluetoothTestSuite()
 		return
 
-	def run_control_center_test_suite(self):
+	@staticmethod	
+	def run_control_center_test_suite():
 		ControlCenter.controlCenterTestSuite()
 		return
 
-	def run_desktop_and_dock_test_suite(self):
+	@staticmethod	
+	def run_desktop_and_dock_test_suite():
 		DesktopAndDock.desktop_and_dockTestSuite()
 		return
 
-	def run_displays_test_suite(self):
+	@staticmethod	
+	def run_displays_test_suite():
 		Displays.displaysTestSuite()
 		return
 
-	def run_focus_test_suite(self):
+	@staticmethod	
+	def run_focus_test_suite():
 		Focus.focusTestSuite()
 		return
 
-	def run_general_test_suite(self):
+	@staticmethod	
+	def run_general_test_suite():
 		General.generalTestSuite()
 		return
 
-	def run_internet_accounts_test_suite(self):
+	@staticmethod	
+	def run_internet_accounts_test_suite():
 		InternetAccounts.internetAccountsTestSuite()
 		return
 
-	def run_lock_screen_test_suite(self):
+	@staticmethod	
+	def run_lock_screen_test_suite():
 		LockScreen.lockScreenTestSuite()
 		return
 
-	def run_notifications_test_suite(self):
+	@staticmethod	
+	def run_notifications_test_suite():
 		Notifications.notificationsTestSuite()
 		return
 
-	def run_privacy_and_security_test_suite(self):
+	@staticmethod	
+	def run_privacy_and_security_test_suite():
 		Privacy.privacyAndSecurityTestSuite()
 		return
 
-	def run_screen_time_test_suite(self):
+	@staticmethod	
+	def run_screen_time_test_suite():
 		ScreenTime.screenTimeTestSuite()
 		return
 
-	def run_siri_test_suite(self):
+	@staticmethod	
+	def run_siri_test_suite():
 		Siri.siriTestSuite()
 		return
 
-	def run_sound_test_suite(self):
+	@staticmethod	
+	def run_sound_test_suite():
 		Sound.soundTestSuite()
 		return
 
-	def run_touchID_and_password_test_suite(self):
+	@staticmethod	
+	def run_touchID_and_password_test_suite():
 		TouchIDAndPassword.touchIDAndPasswordTestSuite()
 		return
 
-	def run_users_and_groups_test_suite(self):
+	@staticmethod	
+	def run_users_and_groups_test_suite():
 		UsersAndGroups.usersAndGroupsTestSuite()
 		return
 
-	def run_wallpaper_test_suite(self):
+	@staticmethod	
+	def run_wallpaper_test_suite():
 		Wallpaper.wallpaperTestSuite()
 		return
 
-	def run_wifi_test_suite(self):
+	@staticmethod	
+	def run_wifi_test_suite():
 		WiFi.wifiTestSuite()
 		return
 
 
-	def runTestEnvironment(self):
+	@staticmethod	
+	def runTestEnvironment():
 		print("===============================================================")
 		print("===============================================================")
 
@@ -234,7 +266,19 @@ class TestEnvironment:
 # =====================================================================
 # Tests:
 i = TestEnvironment()
-i.runTestEnvironment()
+
+"""
+Uncomment to run full program, 
+comment out to run individual test cases 
+in python interpretor.
+"""
+# i.runTestEnvironment()
+
+
+
+
+
+
 
 # print("===============================================================")
 # print("===============================================================")
