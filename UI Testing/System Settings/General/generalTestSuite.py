@@ -32,69 +32,58 @@ class General:
 		
 
 
-
+# ABOUT
 	@staticmethod
 	def test_open_about_general_settings():
+
+		i.setUp()
+
 		print("Opening About pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		time.sleep(2)
-
-		py.moveTo(296, 39)
+		py.moveTo(679, 94)
 		py.click()
 
 		time.sleep(4)
 		print("About pane successfully opened.")
 
-
+# SOFTWARE UPDATE
 	@staticmethod	
 	def test_open_software_update_settings():
+
+		i.setUp()
+
 		print("Opening Software Update pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		time.sleep(2)
-
-		py.moveTo(273, 720)
+		py.moveTo(679, 140)
 		py.click()
 
 		time.sleep(4)
 		print("Software Update pane successfully opened.")
 
-
+# STORAGE
 	@staticmethod
 	def test_open_storage_settings():
+
+		i.setUp()
+
 		print("Opening Storage pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		time.sleep(2)
-
-		py.moveTo(276, 789)
+		py.moveTo(679, 180)
 		py.click()
 
 		time.sleep(4)
 		print("Storage pane successfully opened.")
 
-
+# AIRDROP & HANDOFF 
 	@staticmethod
 	def test_open_airDrop_and_handOff_settings():
 		print("Opening AirDrop & Handoff pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		time.sleep(2)
-
-		py.moveTo(273, 82)
+		py.moveTo(679, 223)
 		py.click()
 
 		time.sleep(4)
@@ -299,7 +288,7 @@ class General:
 
 # Tests:
 # ======================================================================
-m = General()
+i = General()
 
 # print("===============================================================")
 # print("===============================================================")
