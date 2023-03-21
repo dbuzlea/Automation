@@ -5,6 +5,10 @@ import os
 
 TIME_LIMIT = 5
 
+# Change to proper email credentials:
+EMAIL = "mailAccount@gmail.com"
+PASSWORD = "Password123"
+
 class InternetAccounts:
 	
 
@@ -37,13 +41,17 @@ class InternetAccounts:
 		os.system("pkill -a 'System Settings'")
 
 
+
 # Add Account
 	@staticmethod
 	def test_add_account_internet_accounts_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Selecting Add Account...")
 
-		py.moveTo(612, 283)
+		py.moveTo(612, 299)
 		py.click()
 		time.sleep(2)
 
@@ -76,7 +84,7 @@ class InternetAccounts:
 		time.sleep(1)
 		print("Entering in username...")
 
-		py.write("johnny.appleseed.ios1984")
+		py.write(EMAIL)
 		time.sleep(1)
 		py.press("return")
 
@@ -87,51 +95,58 @@ class InternetAccounts:
 		time.sleep(3)
 		print("Entering in password...")
 
-		py.write("Apple237")
+		py.write(PASSWORD)
 		time.sleep(1)
 		py.press("return")
 
 		time.sleep(2)
 		print("Password successfully entered.")
 
-		# Send
-		time.sleep(1)
-		print("Selecting send...")
+# UNCOMMENT ONCE EMAIL CREDENTIALS ARE ADDED: 		
 
-		py.moveTo(656, 702)
-		py.click()
+		# # Send
+		# time.sleep(1)
+		# print("Selecting send...")
 
-		time.sleep(2)
-		print("Send successfully selected.")
+		# py.moveTo(656, 702)
+		# py.click()
 
-		# 2FA
-		time.sleep(2)
-		print("Entering in 2FA code...")
+		# time.sleep(2)
+		# print("Send successfully selected.")
 
-		py.press("return")
+		# # 2FA
+		# time.sleep(2)
+		# print("Entering in 2FA code...")
 
-		time.sleep(1)
-		print("2FA successfully entered.")
+		# py.press("return")
 
-		# Done
-		time.sleep(3)
-		print("Selecting Done...")
+		# time.sleep(1)
+		# print("2FA successfully entered.")
 
-		py.moveTo(494, 466)
-		py.click()
+		# # Done
+		# time.sleep(3)
+		# print("Selecting Done...")
 
-		time.sleep(2)
-		print("Done successfully selected.")
+		# py.moveTo(494, 466)
+		# py.click()
 
-		time.sleep(TIME_LIMIT)
+		# time.sleep(2)
+		# print("Done successfully selected.")
+
+		# time.sleep(TIME_LIMIT)
 
 		print("Mail account successfully added.")
 
+		i.tearDown()
 
 
-# Delete Account
+
+# Delete Account [CAUTION: THIS WILL REMOVE AN ACCOUNT FROM YOUR MAIL SETTINGS!]
 	@staticmethod
 	def test_delete_account_internet_accounts_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Selecting mail account...")
 
@@ -162,6 +177,10 @@ class InternetAccounts:
 		time.sleep(2)
 		print("Mail account successfully deleted.")
 
+		i.tearDown()
+
+
+
 	@staticmethod
 	def internetAccountsTestSuite():
 		print("===============================================================")
@@ -172,19 +191,16 @@ class InternetAccounts:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_add_account_internet_accounts_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_delete_account_internet_accounts_settings()
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("Internet Accounts test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -196,31 +212,4 @@ class InternetAccounts:
 # =====================================================================
 # Tests:
 i = InternetAccounts()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_add_account_internet_accounts_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_delete_account_internet_accounts_settings()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

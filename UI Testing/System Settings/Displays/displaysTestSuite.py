@@ -37,9 +37,13 @@ class Displays:
 		os.system("pkill -a 'System Settings'")
 
 
+
 # Automatically adjust brightness
 	@staticmethod
 	def test_toggle_automatic_brightness_adjust_displays_setting():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF automatic adjust brightness...")
 
@@ -60,10 +64,15 @@ class Displays:
 		time.sleep(2)
 		print("Automatic adjust brightness successfully enabled.")
 
+		i.tearDown()
+
 
 # True Tone
 	@staticmethod
 	def test_toggle_true_tone_displays_setting():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF True Tone...")
 
@@ -83,6 +92,8 @@ class Displays:
 
 		time.sleep(2)
 		print("True Tone successfully enabled.")
+
+		i.tearDown()
 
 
 # Color Profile
@@ -108,38 +119,43 @@ class Displays:
 		time.sleep(2)
 		print("Color profile drop down menu successfully collapsed.")
 
-# TODO: Failed Tests Below
-# Advance
+# Advance (Independent Method)
 	@staticmethod	
 	def test_open_advance_displays_setting():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening Advance window...")
 
 		time.sleep(2)
-		py,moveTo(524, 605)
+		py.moveTo(522, 608)
 		py.click()
 
 		time.sleep(2)
 		print("Advance window successfully opened.")
 
 
-# Close Advance window
+# Close Advance window (Independent Method)
 	@staticmethod	
 	def test_close_advance_displays_setting():
 		time.sleep(1)
 		print("Closing Advance window...")
 
 		time.sleep(2)
-		py,moveTo(541, 566)
+		py.moveTo(539, 567)
 		py.click()
 
 		time.sleep(2)
-		print("Advance window successfully closed.")	
+		print("Advance window successfully closed.")
 
 
 # Allow pointer to move between any nearby Mac or iPad
 	@staticmethod
 	def test_toggle_allow_pointer_nearby_mac_or_ipad_displays_setting():
+
+		i.test_open_advance_displays_setting()
+
 		time.sleep(1)
 		print("Turning OFF allow pointer to move between nearby Mac or iPad...")
 
@@ -160,15 +176,21 @@ class Displays:
 		time.sleep(2)
 		print("Allow pointer to move between nearby Mac or iPad successfully enabled.")
 
+		i.test_close_advance_displays_setting()
+		i.tearDown()
+
 
 # Push through the edge of a display to connect to a nearby Mac or iPad
 	@staticmethod
 	def test_toggle_push_through_edge_of_screen_displays_setting():
+
+		i.test_open_advance_displays_setting()
+
 		time.sleep(1)
 		print("Turning OFF push through edge of display to connect...")
 
 		time.sleep(2)
-		py.moveTo(550, 141)
+		py.moveTo(547, 228)
 		py.click()
 
 		time.sleep(2)
@@ -178,11 +200,45 @@ class Displays:
 		print("Turning ON push through edge of display to connect...")
 
 		time.sleep(2)
-		py.moveTo(550, 141)
+		py.moveTo(547, 228)
 		py.click()
 
 		time.sleep(2)
 		print("Push through edge of display to connect successfully enabled.")
+
+		i.test_close_advance_displays_setting()
+		i.tearDown()
+
+
+# Automatically reconnect to any nearby Mac or iPad
+	@staticmethod
+	def test_toggle_automatic_reconnect_to_nearby_device_displays_setting():
+
+		i.test_open_advance_displays_setting()
+
+		time.sleep(1)
+		print("Turning OFF automatic reconnect to nearby Mac or iPad...")
+
+		time.sleep(2)
+		py.moveTo(547, 315)
+		py.click()
+
+		time.sleep(2)
+		print("Automatic reconnect to nearby Mac or iPad successfully disabled.")
+
+		time.sleep(1)
+		print("Turning ON automatic reconnect to nearby Mac or iPad...")
+
+		time.sleep(2)
+		py.moveTo(547, 315)
+		py.click()
+
+		time.sleep(2)
+		print("Automatic reconnect to nearby Mac or iPad successfully enabled.")
+
+		i.test_close_advance_displays_setting()
+		i.tearDown()	
+
 
 
 	@staticmethod
@@ -195,48 +251,36 @@ class Displays:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_toggle_automatic_brightness_adjust_displays_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_toggle_true_tone_displays_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_color_profile_displays_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_advance_displays_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_advance_displays_setting()
 		i.test_toggle_allow_pointer_nearby_mac_or_ipad_displays_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_advance_displays_setting()
 		i.test_toggle_push_through_edge_of_screen_displays_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
+		i.test_toggle_automatic_reconnect_to_nearby_device_displays_setting()
+		
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("Displays test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -250,60 +294,4 @@ class Displays:
 # =====================================================================
 # Tests:
 i = Displays()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_toggle_automatic_brightness_adjust_displays_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_toggle_true_tone_displays_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_color_profile_displays_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_advance_displays_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_advance_displays_setting()
-# i.test_toggle_allow_pointer_nearby_mac_or_ipad_displays_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_advance_displays_setting()
-# i.test_toggle_push_through_edge_of_screen_displays_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

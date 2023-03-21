@@ -37,9 +37,13 @@ class DesktopAndDock:
 		os.system("pkill -a 'System Settings'")
 
 
+
 # Position on screen
 	@staticmethod
 	def test_select_position_on_screen_desktop_and_dock_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening position on screen drop down menu...")
 
@@ -59,10 +63,15 @@ class DesktopAndDock:
 		time.sleep(2)
 		print("Position on screen drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Minimize windows using
 	@staticmethod
 	def test_select_minimize_windows_using_desktop_and_dock_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening minimize windows using drop down menu...")
 
@@ -82,10 +91,15 @@ class DesktopAndDock:
 		time.sleep(2)
 		print("Minimize windows using drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Double-click window title bar to
 	@staticmethod
 	def test_select_doubleClick_window_title_bar_desktop_and_dock_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening double-click window title bar drop down menu...")
 
@@ -105,6 +119,8 @@ class DesktopAndDock:
 		time.sleep(2)
 		print("Double-click window title bar drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def desktop_and_dockTestSuite():
@@ -116,69 +132,26 @@ class DesktopAndDock:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_position_on_screen_desktop_and_dock_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_minimize_windows_using_desktop_and_dock_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_doubleClick_window_title_bar_desktop_and_dock_settings()
-		i.tearDown()
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("Desktop & Dock test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
 		return		
 
-# TODO: 
-
-
 # =====================================================================
 # Tests:
 i = DesktopAndDock()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_position_on_screen_desktop_and_dock_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_minimize_windows_using_desktop_and_dock_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_doubleClick_window_title_bar_desktop_and_dock_settings()
-# i.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

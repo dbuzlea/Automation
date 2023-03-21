@@ -35,8 +35,12 @@ class Bluetooth:
 		os.system("pkill -a 'System Settings'")
 
 
+# DISABLE BLUETOOTH
 	@staticmethod
 	def test_turn_off_bluetooth_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF Bluetooth...")
 
@@ -46,9 +50,14 @@ class Bluetooth:
 		time.sleep(2)
 		print("Bluetooth successfully turned OFF.")
 
+		i.tearDown()
 
+# ENABLE BLUETOOTH
 	@staticmethod
 	def test_turn_on_bluetooth_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON Bluetooth...")
 
@@ -57,6 +66,10 @@ class Bluetooth:
 
 		time.sleep(2)
 		print("Bluetooth successfully turned ON.")
+
+		i.tearDown()
+
+
 
 	@staticmethod
 	def bluetoothTestSuite():
@@ -68,22 +81,16 @@ class Bluetooth:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_off_bluetooth_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_on_bluetooth_settings()
-		i.tearDown()
-
-		print("===============================================================")
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("Bluetooth test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -93,34 +100,4 @@ class Bluetooth:
 # =====================================================================
 # Tests:
 i = Bluetooth()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_off_bluetooth_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_on_bluetooth_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

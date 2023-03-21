@@ -36,9 +36,12 @@ class Focus:
 
 
 
-
+# DO NOT DISTURB PANE:
 	@staticmethod
 	def test_open_DND_pane_focus_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening Do Not Disturb pane...")
 
@@ -49,8 +52,12 @@ class Focus:
 		print("Do Not Disturb pane successfully opened.")
 
 
+# ALLOWED PEOPLE:
 	@staticmethod
 	def test_select_allowed_people_window_DND_pane_focus_settings():
+
+		i.test_open_DND_pane_focus_settings()
+
 		time.sleep(2)
 		print("Selecting Allowed People in DND pane...")
 
@@ -107,9 +114,15 @@ class Focus:
 		time.sleep(2)
 		print("Allowed People window successfully closed.")
 
+		i.tearDown()
 
+
+# ALLOWED APPS:
 	@staticmethod
 	def test_select_allowed_apps_window_DND_pane_focus_settings():
+
+		i.test_open_DND_pane_focus_settings()
+
 		time.sleep(2)
 		print("Selecting Allowed Apps in DND pane...")
 
@@ -175,9 +188,15 @@ class Focus:
 		time.sleep(2)
 		print("Allowed Apps window successfully closed.")
 
+		i.tearDown()
 
+
+# SLEEP PANE:
 	@staticmethod
 	def test_open_sleep_pane_focus_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening Sleep pane...")
 
@@ -188,8 +207,12 @@ class Focus:
 		print("Sleep pane successfully opened.")
 
 
+# ALLOWED PEOPLE [SLEEP]:
 	@staticmethod
 	def test_select_allowed_people_window_sleep_pane_focus_settings():
+
+		i.test_open_sleep_pane_focus_settings()
+
 		time.sleep(2)
 		print("Selecting Allowed People in DND pane...")
 
@@ -246,9 +269,15 @@ class Focus:
 		time.sleep(2)
 		print("Allowed People window successfully closed.")
 
+		i.tearDown()
 
+
+# ALLOWED APPS [APPS]:
 	@staticmethod
 	def test_select_allowed_apps_window_sleep_pane_focus_settings():
+
+		i.test_open_sleep_pane_focus_settings()
+
 		time.sleep(2)
 		print("Selecting Allowed Apps in DND pane...")
 
@@ -314,13 +343,19 @@ class Focus:
 		time.sleep(2)
 		print("Allowed Apps window successfully closed.")
 
+		i.tearDown()
 
+
+# ADD FILTER [SLEEP]:
 	@staticmethod
 	def test_select_add_filter_button_sleep_pane_focus_settings():
+
+		i.test_open_sleep_pane_focus_settings()
+
 		time.sleep(2)
 		print("Selecting Add Filter button...")
 		# addFilterButton
-		py.moveTo(638, 532)
+		py.moveTo(638, 554)
 		py.click()
 
 		time.sleep(2)
@@ -335,21 +370,42 @@ class Focus:
 		time.sleep(2)
 		print("Cancel button successfully selected.")
 
+		i.tearDown()
 
+
+# DELETE FOCUS [SLEEP]:
 	@staticmethod
 	def test_select_delete_focus_sleep_pane_focus_settings():
+
+		i.test_open_sleep_pane_focus_settings()
+
 		time.sleep(2)
 		print("Selecting Delete Focus button...")
 
-		py.moveTo(638, 582)
+		py.moveTo(638, 605)
 		py.click()
 
 		time.sleep(2)
 		print("Delete Focus button successfully selected.")
 
+		time.sleep(2)
+		print("Selecting Cancel button...")
 
+		py.moveTo(300, 402)
+		py.click()
+
+		print("Cancel button successfully selected.")
+		time.sleep(1)
+
+		i.tearDown()
+
+
+# ADD FOCUS:
 	@staticmethod
 	def test_select_add_focus_focus_settings():
+
+		i.setUp()
+
 		time.sleep(2)
 		print("Selecting Add Focus button...")
 
@@ -359,9 +415,15 @@ class Focus:
 		time.sleep(2)
 		print("Add Focus button successfully selected.")
 
+		i.tearDown()
 
+
+# SHARE ACROSS DEVICES:
 	@staticmethod
 	def test_toggle_share_across_devices_focus_settings():
+
+		i.setUp()
+
 		time.sleep(2)
 		print("Turning OFF Share across devices...")
 
@@ -379,22 +441,31 @@ class Focus:
 
 		time.sleep(2)
 		print("Share across devices successfully enabled.")
+
+		i.tearDown()
 		
+# Redundant Module:
+	# @staticmethod
+	# def test_select_add_focus_focus_settings():
 
-	@staticmethod
-	def test_select_add_focus_focus_settings():
-		time.sleep(2)
-		print("Selecting Add Focus button...")
+
+
+	# 	time.sleep(2)
+	# 	print("Selecting Add Focus button...")
 	
-		py.moveTo(647, 173)
-		py.click()
+	# 	py.moveTo(647, 173)
+	# 	py.click()
 
-		time.sleep(2)
-		print("Add Focus button successfully selected.")
+	# 	time.sleep(2)
+	# 	print("Add Focus button successfully selected.")
 
 
+# FOCUS STATUS:
 	@staticmethod
 	def test_open_focus_status_focus_settings():
+
+		i.setUp()
+
 		time.sleep(2)
 		print("Opening Focus status...")
 
@@ -405,8 +476,12 @@ class Focus:
 		print("Focus status successfully opened.")
 
 
+# SHARE FOCUS STATUS:
 	@staticmethod
 	def test_toggle_share_focus_status_pane_focus_settings():
+
+		i.test_open_focus_status_focus_settings()
+
 		time.sleep(2)
 		print("Turning OFF Share Focus status...")
 
@@ -425,9 +500,15 @@ class Focus:
 		time.sleep(2)
 		print("Share Focus status successfully enabled.")
 
+		i.tearDown()
 
+
+# SHARE FROM - DND:
 	@staticmethod
 	def test_toggle_share_from_DND_focus_status_pane_focus_settings():
+
+		i.test_open_focus_status_focus_settings()
+
 		time.sleep(2)
 		print("Turning ON Share From DND...")
 
@@ -446,9 +527,15 @@ class Focus:
 		time.sleep(2)
 		print("Share From DND successfully disabled.")
 
+		i.tearDown()
 
+
+# SHARE FROM - SLEEP:
 	@staticmethod
 	def test_toggle_share_from_sleep_focus_status_pane_focus_settings():
+
+		i.test_open_focus_status_focus_settings()
+
 		time.sleep(2)
 		print("Turning OFF Share From Sleep...")
 
@@ -467,6 +554,9 @@ class Focus:
 		time.sleep(2)
 		print("Share From Sleep successfully enabled.")
 
+		i.tearDown()
+
+
 
 	@staticmethod
 	def focusTestSuite():
@@ -478,101 +568,64 @@ class Focus:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_DND_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_DND_pane_focus_settings()
 		i.test_select_allowed_people_window_DND_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_DND_pane_focus_settings()
 		i.test_select_allowed_apps_window_DND_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_sleep_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_sleep_pane_focus_settings()
 		i.test_select_allowed_people_window_sleep_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_sleep_pane_focus_settings()
 		i.test_select_allowed_apps_window_sleep_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_sleep_pane_focus_settings()
 		i.test_select_add_filter_button_sleep_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_sleep_pane_focus_settings()
 		i.test_select_delete_focus_sleep_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_add_focus_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_toggle_share_across_devices_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_focus_status_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_focus_status_focus_settings()
 		i.test_toggle_share_focus_status_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_focus_status_focus_settings()
 		i.test_toggle_share_from_DND_focus_status_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_focus_status_focus_settings()
 		i.test_toggle_share_from_sleep_focus_status_pane_focus_settings()
-		i.tearDown()
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("Focus test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -584,113 +637,4 @@ class Focus:
 # =====================================================================
 # Tests:
 i = Focus()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_DND_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_DND_pane_focus_settings()
-# i.test_select_allowed_people_window_DND_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_DND_pane_focus_settings()
-# i.test_select_allowed_apps_window_DND_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_sleep_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_sleep_pane_focus_settings()
-# i.test_select_allowed_people_window_sleep_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_sleep_pane_focus_settings()
-# i.test_select_allowed_apps_window_sleep_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_sleep_pane_focus_settings()
-# i.test_select_add_filter_button_sleep_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_sleep_pane_focus_settings()
-# i.test_select_delete_focus_sleep_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_add_focus_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_toggle_share_across_devices_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_focus_status_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_focus_status_focus_settings()
-# i.test_toggle_share_focus_status_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_focus_status_focus_settings()
-# i.test_toggle_share_from_DND_focus_status_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_focus_status_focus_settings()
-# i.test_toggle_share_from_sleep_focus_status_pane_focus_settings()
-# i.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

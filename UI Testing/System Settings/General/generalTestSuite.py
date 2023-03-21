@@ -47,6 +47,8 @@ class General:
 		time.sleep(4)
 		print("About pane successfully opened.")
 
+		i.tearDown()
+
 # SOFTWARE UPDATE
 	@staticmethod	
 	def test_open_software_update_settings():
@@ -61,6 +63,8 @@ class General:
 
 		time.sleep(4)
 		print("Software Update pane successfully opened.")
+
+		i.tearDown()
 
 # STORAGE
 	@staticmethod
@@ -77,9 +81,14 @@ class General:
 		time.sleep(4)
 		print("Storage pane successfully opened.")
 
+		i.tearDown()
+
 # AIRDROP & HANDOFF 
 	@staticmethod
 	def test_open_airDrop_and_handOff_settings():
+
+		i.setUp()
+
 		print("Opening AirDrop & Handoff pane...")
 		time.sleep(2)
 
@@ -89,117 +98,137 @@ class General:
 		time.sleep(4)
 		print("AirDrop & Handoff pane successfully opened.")
 
+		i.tearDown()
 
+# LOGIN ITEMS
 	@staticmethod
 	def test_open_loginItems_settings():
+
+		i.setUp()
+
 		print("Opening Login Items pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		time.sleep(2)
-
-		py.moveTo(273, 456)
+		py.moveTo(679, 271)
 		py.click()
 
 		time.sleep(4)
 		print("Login Items pane successfully opened.")
 
+		i.tearDown()
 
+# LANGUAGE & REGION
 	@staticmethod
 	def test_open_language_and_region_settings():
+
+		i.setUp()
+
 		print("Opening Language & Region pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		time.sleep(2)
-
-		py.moveTo(273, 413)
+		py.moveTo(679, 322)
 		py.click()
 
 		time.sleep(4)
 		print("Language & Region pane successfully opened.")
 
+		i.tearDown()
 
+# DATE & TIME
 	@staticmethod
 	def test_open_date_and_time_settings():
+
+		i.setUp()
+
 		print("Opening Date & Time pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		py.moveTo(273, 215)
+		py.moveTo(679, 364)
 		py.click()
 
 		time.sleep(4)
 		print("Date & Time pane successfully opened.")
 
+		i.tearDown()
 
+# SHARING
 	@staticmethod
 	def test_open_sharing_settings():
+
+		i.setUp()
+
 		print("Opening Sharing pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		py.moveTo(273, 676)
+		py.moveTo(679, 418)
 		py.click()
 
 		time.sleep(4)
 		print("Sharing pane successfully opened.")
 
+		i.tearDown()
 
+# TIME MACHINE
 	@staticmethod
 	def test_open_time_machine_settings():
+
+		i.setUp()
+
 		print("Opening Time Machine pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		py.moveTo(273, 809)
+		py.moveTo(679, 460)
 		py.click()
 
 		time.sleep(4)
 		print("Time Machine pane successfully opened.")
 
+		i.tearDown()
 
+# TRANSFER OR RESET
 	@staticmethod
 	def test_open_transfer_or_reset_settings():
+
+		i.setUp()
+
 		print("Opening Transfer or Reset pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
+		py.moveTo(679, 497)
 		py.click()
 
-		py.moveTo(360, 834)
 		time.sleep(3)
 
-		py.moveTo(273, 711)
+		py.moveTo(560, 216)
+		py.click()
+
+		time.sleep(3)
+
+		py.moveTo(663, 510)
 		py.click()
 
 		time.sleep(4)
 		print("Transfer or Reset pane successfully opened.")
 
+		i.tearDown()
 
+# STARTUP DISK
 	@staticmethod
 	def test_open_startUp_disk_settings():
+
+		i.setUp()
+
 		print("Opening Startup Disk pane...")
 		time.sleep(2)
 
-		py.moveTo(278, 8)
-		py.click()
-
-		py.moveTo(273, 765)
+		py.moveTo(679, 545)
 		py.click()
 
 		time.sleep(4)
 		print("Startup Disk pane successfully opened.")
+
+		i.tearDown()
+
 
 
 	@staticmethod
@@ -212,74 +241,52 @@ class General:
 		print("===============================================================")
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_about_general_settings()
-		m.tearDown()
+		i.test_open_about_general_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_software_update_settings()
-		m.tearDown()
+		i.test_open_software_update_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_storage_settings()
-		m.tearDown()
+		i.test_open_storage_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_airDrop_and_handOff_settings()
-		m.tearDown()
+		i.test_open_airDrop_and_handOff_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_loginItems_settings()
-		m.tearDown()
+		i.test_open_loginItems_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_language_and_region_settings()
-		m.tearDown()
+		i.test_open_language_and_region_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_date_and_time_settings()
-		m.tearDown()
+		i.test_open_date_and_time_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_sharing_settings()
-		m.tearDown()
+		i.test_open_sharing_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_time_machine_settings()
-		m.tearDown()
+		i.test_open_time_machine_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_transfer_or_reset_settings()
-		m.tearDown()
+		i.test_open_transfer_or_reset_settings()
 
 		print("===============================================================")
 
-		m.setUp()
-		m.test_open_startUp_disk_settings()
-		m.tearDown()
+		i.test_open_startUp_disk_settings()
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("General test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -289,86 +296,4 @@ class General:
 # Tests:
 # ======================================================================
 i = General()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_about_general_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_software_update_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_storage_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_airDrop_and_handOff_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_loginItems_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_language_and_region_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_date_and_time_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_sharing_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_time_machine_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_transfer_or_reset_settings()
-# m.tearDown()
-
-# print("===============================================================")
-
-# m.setUp()
-# m.test_open_startUp_disk_settings()
-# m.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

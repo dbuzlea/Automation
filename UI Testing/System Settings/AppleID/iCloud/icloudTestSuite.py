@@ -40,9 +40,12 @@ class iCloud:
 
 
 
-
+# MANAGE iCLOUD:
 	@staticmethod
 	def test_open_manage_icloud_settings():
+
+		i.setUp()
+
 		print("Selecting Manage button...")
 		time.sleep(1)
 
@@ -52,64 +55,91 @@ class iCloud:
 		time.sleep(TIME_LIMIT)
 		print("Manage button successfully opened.")
 
+		i.tearDown()
 
+# iCLOUD DRIVE:
 	@staticmethod
 	def test_open_icloud_drive_icloud_settings():
+
+		i.setUp()
+
 		print("Opening iCloud Drive pane...")
 		time.sleep(1)
 
-		py.moveTo(664, 264)
+		py.moveTo(679, 266)
 		py.click()
 
 		time.sleep(TIME_LIMIT)
 		print("iCloud Drive pane successfully opened.")
 
+		i.tearDown()
 
+# iCLOUD MAIL:
 	@staticmethod
 	def test_open_icloud_mail_icloud_settings():
+
+		i.setUp()
+
 		print("Opening iCloud Mail pane...")
 		time.sleep(1)
 
-		py.moveTo(447, 307)
+		py.moveTo(679, 309)
 		py.click()
 
 		time.sleep(TIME_LIMIT)
 		print("iCloud Mail pane successfully opened.")
 
+		i.tearDown()
 
+# PRIVATE RELAY:
 	@staticmethod
 	def test_open_private_relay_icloud_settings():
+
+		i.setUp()
+
 		print("Opening Private Relay pane...")
 
-		py.moveTo(447, 347)
+		py.moveTo(679, 351)
 		py.click()
 
 		time.sleep(TIME_LIMIT)
-		print("Private Relay pane successfully opened.")				
+		print("Private Relay pane successfully opened.")
 
+		i.tearDown()				
 
+# HIDE MY EMAIL:
 	@staticmethod
 	def test_open_hide_email_icloud_settings():
+
+		i.setUp()
+
 		print("Opening Hide my Email pane...")
 		time.sleep(1)
 
-		py.moveTo(447, 390)
+		py.moveTo(679, 392)
 		py.click()
 
 		time.sleep(TIME_LIMIT)
 		print("Hide my Email pane successfully opened.")
 
+		i.tearDown()
 
+# FIND MY MAC:
 	@staticmethod
 	def test_open_find_my_mac_icloud_settings():
+
+		i.setUp()
+
 		print("Opening Find My Mac pane...")
 		time.sleep(1)
 
-		py.moveTo(447, 437)
+		py.moveTo(679, 437)
 		py.click()
 
 		time.sleep(TIME_LIMIT)
 		print("Find My Mac pane successfully opened.")
+
+		i.tearDown()
 
 
 	@staticmethod
@@ -122,44 +152,32 @@ class iCloud:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_manage_icloud_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_icloud_drive_icloud_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_icloud_mail_icloud_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_private_relay_icloud_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_hide_email_icloud_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_find_my_mac_icloud_settings()
-		i.tearDown()
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("iCloud test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -170,56 +188,4 @@ class iCloud:
 # =====================================================================
 # Tests:
 i = iCloud()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_manage_icloud_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_icloud_drive_icloud_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_icloud_mail_icloud_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_private_relay_icloud_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_hide_email_icloud_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_find_my_mac_icloud_settings()
-# i.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

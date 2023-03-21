@@ -37,9 +37,13 @@ class ControlCenter:
 		os.system("pkill -a 'System Settings'")
 
 
+
 # WiFi
 	@staticmethod
 	def test_open_wifi_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening wifi drop down menu...")
 
@@ -60,9 +64,14 @@ class ControlCenter:
 		time.sleep(2)
 		print("WiFi drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 # Blutooth
 	@staticmethod
 	def test_open_bluetooth_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening blutooth drop down menu...")
 
@@ -83,10 +92,15 @@ class ControlCenter:
 		time.sleep(2)
 		print("Bluetooth drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # AirDrop
 	@staticmethod
 	def test_open_AirDrop_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening AirDrop drop down menu...")
 
@@ -107,10 +121,15 @@ class ControlCenter:
 		time.sleep(2)
 		print("AirDrop drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Focus
 	@staticmethod
 	def test_open_focus_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening Focus drop down menu...")
 
@@ -131,10 +150,15 @@ class ControlCenter:
 		time.sleep(2)
 		print("Focus drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Stage Manager
 	@staticmethod
 	def test_open_stage_manager_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening Stage Manager drop down menu...")
 
@@ -155,10 +179,15 @@ class ControlCenter:
 		time.sleep(2)
 		print("Stage Manager drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Screen Mirroring
 	@staticmethod
 	def test_open_screen_mirroring_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening screen mirroring drop down menu...")
 
@@ -179,10 +208,15 @@ class ControlCenter:
 		time.sleep(2)
 		print("Screen mirroring drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Display
 	@staticmethod
 	def test_open_display_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening display drop down menu...")
 
@@ -203,10 +237,15 @@ class ControlCenter:
 		time.sleep(2)
 		print("Display drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Sound
 	@staticmethod
 	def test_open_sound_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening sound drop down menu...")
 
@@ -227,10 +266,15 @@ class ControlCenter:
 		time.sleep(2)
 		print("Sound drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Now Playing
 	@staticmethod
 	def test_open_now_playing_control_center_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening Now Playing drop down menu...")
 
@@ -251,6 +295,9 @@ class ControlCenter:
 		time.sleep(2)
 		print("Now Playing drop down menu successfully collapsed.")
 
+		i.tearDown()
+
+
 
 	@staticmethod
 	def controlCenterTestSuite():
@@ -262,62 +309,44 @@ class ControlCenter:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_wifi_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_bluetooth_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_AirDrop_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_focus_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_stage_manager_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_screen_mirroring_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_display_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_sound_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_now_playing_control_center_settings()
-		i.tearDown()
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("Control Center test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -331,74 +360,4 @@ class ControlCenter:
 # =====================================================================
 # Tests:
 i = ControlCenter()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_wifi_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_bluetooth_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_AirDrop_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_focus_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_stage_manager_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_screen_mirroring_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_display_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_sound_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_now_playing_control_center_settings()
-# i.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

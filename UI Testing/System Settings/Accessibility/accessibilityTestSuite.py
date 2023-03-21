@@ -41,6 +41,9 @@ class Accessibility:
 # VoiceOver
 	@staticmethod
 	def test_open_voice_over_accessibility_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening VoiceOver tab...")
 
@@ -51,9 +54,14 @@ class Accessibility:
 		time.sleep(2)
 		print("VoiceOver tab successfully opened.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_toggle_voice_over_accessibility_settings():
+
+		i.test_open_voice_over_accessibility_settings()
+
 		time.sleep(1)
 		print("Turning ON VoiceOver...")
 
@@ -73,6 +81,8 @@ class Accessibility:
 
 		time.sleep(2)
 		print("VoiceOver successfully disabled.")
+
+		i.tearDown()
 
 # Zoom
 	@staticmethod
@@ -1053,109 +1063,5 @@ class Accessibility:
 
 # =====================================================================
 # Tests:
-# i = Accessibility()
-
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_voice_over_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_voice_over_accessibility_settings()
-# i.test_toggle_voice_over_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_zoom_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_zoom_accessibility_settings()
-# i.test_toggle_zoom_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_display_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_display_accessibility_settings()
-# i.test_toggle_display_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_spoken_content_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_spoken_content_accessibility_settings()
-# i.test_spoken_content_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_descriptions_accessibility_settings()
-# i.test_descriptions_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_audio_accessibility_settings()
-# i.test_audio_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_rtt_accessibility_settings()
-# i.test_rtt_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_captions_accessibility_settings()
-# i.test_captions_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_live_captions_accessibility_settings()
-# i.test_live_captions_settings_accessibility_settings()
-# i.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
+i = Accessibility()
 

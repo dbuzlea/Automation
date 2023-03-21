@@ -32,41 +32,56 @@ class AppleID:
 
 
 
-
+# NAME, PHONE, EMAIL:
 	@staticmethod
 	def test_open_name_phone_email_appleID_settings():
-		print("Opening Name, Phone, and Email pane...")
-		time.sleep(1)
 
-		py.moveTo(449, 277)
+		i.setUp()
+
+		print("Opening Name, Phone, and Email pane...")
+		time.sleep(3)
+
+		py.moveTo(679, 280)
 		py.click()
 
 		time.sleep(10)
 		print("Name, Phone, Email pane successfully opened.")
 
-	
+		i.tearDown()
+
+# PASSWORD & SECURITY:	
 	@staticmethod
 	def test_open_password_and_security_appleID_settings():
-		print("Opening Password and Security pane...")
-		time.sleep(1)
 
-		py.moveTo(462, 319)
+		i.setUp()
+
+		print("Opening Password and Security pane...")
+		time.sleep(3)
+
+		py.moveTo(679, 324)
 		py.click()
 
 		time.sleep(10)
 		print("Password and Security pane successfully opened.")
 
+		i.tearDown()
 
+# PAYMENT & SHIPPING:
 	@staticmethod
 	def test_open_payment_and_shipping_appleID_settings():
-		print("Opening Payment and Shipping pane...")
-		time.sleep(1)
 
-		py.moveTo(511, 365)
+		i.setUp()
+
+		print("Opening Payment and Shipping pane...")
+		time.sleep(3)
+
+		py.moveTo(679, 365)
 		py.click()
 
 		time.sleep(10)
-		print("Payment and Shipping pane successfully opened.")	
+		print("Payment and Shipping pane successfully opened.")
+
+		i.tearDown()	
 
 
 	@staticmethod	
@@ -79,26 +94,20 @@ class AppleID:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_name_phone_email_appleID_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_password_and_security_appleID_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_payment_and_shipping_appleID_settings()
-		i.tearDown()
 
 		print("===============================================================")
 		print("===============================================================")
 
-		print("Test suite completed.")
+		print("AppleID test suite completed.")
 
 		print("===============================================================")
 		print("===============================================================")
@@ -109,36 +118,4 @@ class AppleID:
 
 # ======================================================================
 i = AppleID()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_name_phone_email_appleID_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_password_and_security_appleID_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_payment_and_shipping_appleID_settings()
-# i.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
 
