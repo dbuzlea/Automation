@@ -107,7 +107,7 @@ cd UI\ Testing/System\ Settings/
 ```
 bash run_all_test_suites.sh
 ```
-- To quit out of script press 'Control' and 'Q'.
+- To quit out of script press 'Control' and 'Z'.
 
 
 # Contribute:
