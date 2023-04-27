@@ -21,13 +21,13 @@ All programs were developed on an M1 13" MacBook Pro (2560 × 1600). If the test
 # Steps to set up environment:
 
 - cd to $PATH where you cloned this repo.
-'''
+```
 cd $PATH/Automation
-'''
+```
 - Run install shell to install all the dependencies for this repo.
-'''
+```
 bash install.sh
-'''
+```
 - Once complete, you can start running all files from Terminal!
 
 
@@ -37,13 +37,13 @@ Consist of mostly experimental files that utilizes both selenium and pyautogui.
 ### Steps to run a file inside Terminal for beginners:
 
 - cd to /Examples/
-'''
+```
 cd Examples
-'''
+```
 - To run a file inside /Examples folder (replace the <file_name> with the name of the file):
-'''
+```
 python3 <file_name>.py
-'''
+```
 
 
 # /UI Testing:
@@ -52,61 +52,61 @@ python3 <file_name>.py
 ### Steps to run a test case inside Terminal for beginners:
 
 - Go to System Settings directory:
-'''
+```
 cd UI\ Testing/System\ Settings/
-'''
+```
 - Run python interpretor:
-'''
+```
 python3
-''' 
+``` 
 - import the file where the test case you wish to run resides by entering 'from <directory>.<file_name> import <Class Name> as i' (example below):
-'''
+```
 from General.generalTestSuite import General as i
-'''
+```
 - run your test case by entering 'i.<name_of_test_case()>'.
-'''
+```
 i.test_open_about_general_settings()
-'''
+```
 - To quit the python interpreter:
-'''
+```
 quit()
-'''
+```
 
 ## Run Test Suite:
 ### Steps to run a test suite inside Terminal for beginners:
 
 - Go to System Settings:
-'''
+```
 cd UI\ Testing/System\ Settings/
-'''
+```
 - Run python interpretor:
-'''
+```
 python3
-''' 
+``` 
 - import the file where the test suite you wish to run resides by entering 'from <directory>.<file_name> import <Class Name> as i'.
-'''
+```
 from General.generalTestSuite import General as i
-'''
+```
 - run your test suite by entering 'i.<name_of_test_suite()>'.
-'''
+```
 i.generalTestSuite()
-'''
+```
 - To quit the python interpreter:
-'''
+```
 quit()
-'''
+```
 
 ## Run whole Test suite:
 ### To run the whole test suite inside Terminal for beginners:
 
 - Go to System Settings:
-'''
+```
 cd UI\ Testing/System\ Settings/
-'''
+```
 - Run the run_all_test_suites.sh file:
-'''
+```
 bash run_all_test_suites.sh
-'''
+```
 - To quit out of script press 'Control' and 'Q'.
 
 
