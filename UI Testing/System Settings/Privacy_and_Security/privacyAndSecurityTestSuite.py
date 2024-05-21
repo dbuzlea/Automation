@@ -40,6 +40,9 @@ class Privacy:
 # Location Services
 	@staticmethod
 	def test_open_location_services_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening location services tab...")
 
@@ -53,6 +56,9 @@ class Privacy:
 
 	@staticmethod
 	def test_location_services_privacy_settings():
+
+		i.test_open_location_services_privacy_settings()
+
 		time.sleep(1)
 		print("Turning OFF location services...")
 
@@ -72,7 +78,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -99,7 +105,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -126,7 +132,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -153,7 +159,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -180,7 +186,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -207,7 +213,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -234,7 +240,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -261,7 +267,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -288,7 +294,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -315,7 +321,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -342,7 +348,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -369,7 +375,7 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
@@ -396,16 +402,21 @@ class Privacy:
 		py.click()
 
 		time.sleep(2)
-		py.moveTo(718, 430)
+		py.moveTo(355, 457)
 		py.click()
 
 		time.sleep(2)
 		print("Cancel successfully selected.")
 
+		i.tearDown()
+
 
 # Contacts
 	@staticmethod
 	def test_open_contacts_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening contacts tab...")
 
@@ -416,10 +427,15 @@ class Privacy:
 		time.sleep(2)
 		print("Contacts tab successfully opened.")
 
+		i.tearDown()
+
 
 # Calendars
 	@staticmethod
 	def test_open_calendars_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening calendars tab...")
 
@@ -430,10 +446,15 @@ class Privacy:
 		time.sleep(2)
 		print("Calendars tab successfully opened.")
 
+		i.tearDown()
+
 
 # Reminders
 	@staticmethod
 	def test_open_reminders_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening Reminders tab...")
 
@@ -444,10 +465,15 @@ class Privacy:
 		time.sleep(2)
 		print("Reminders tab successfully opened.")
 
+		i.tearDown()
+
 
 # Photos
 	@staticmethod
 	def test_open_photos_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening photos tab...")
 
@@ -479,10 +505,15 @@ class Privacy:
 		time.sleep(2)
 		print("Final Cut Pro successfully enabled.")
 
+		i.tearDown()
+
 
 # Blutooth
 	@staticmethod
 	def test_open_blutooth_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening bluetooth tab...")
 
@@ -493,10 +524,15 @@ class Privacy:
 		time.sleep(2)
 		print("Bluetooth tab successfully opened.")
 
+		i.tearDown()
+
 
 # Microphone
 	@staticmethod
 	def test_open_microphone_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening microphone tab...")
 
@@ -638,10 +674,15 @@ class Privacy:
 		time.sleep(2)
 		print("Webex successfully enabled.")
 
+		i.tearDown()
+
 
 # Camera
 	@staticmethod
 	def test_open_camera_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening camera tab...")
 
@@ -761,10 +802,15 @@ class Privacy:
 		time.sleep(2)
 		print("Webex successfully enabled.")
 
+		i.tearDown()
+
 
 # HomeKit
 	@staticmethod
 	def test_open_homekit_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening HomeKit tab...")
 
@@ -775,10 +821,15 @@ class Privacy:
 		time.sleep(2)
 		print("HomeKit tab successfully opened.")
 
+		i.tearDown()
+
 
 # Speech Recognition
 	@staticmethod
 	def test_open_speech_recognition_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening speech recognition tab...")
 
@@ -789,10 +840,15 @@ class Privacy:
 		time.sleep(2)
 		print("Speech recognition tab successfully opened.")
 
+		i.tearDown()
+
 
 # Media & Apple Music
 	@staticmethod
 	def test_open_apple_music_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening media & Apple Music tab...")
 
@@ -803,10 +859,15 @@ class Privacy:
 		time.sleep(2)
 		print("Media & Apple Music tab successfully opened.")
 
+		i.tearDown()
+
 
 # Files and Folders
 	@staticmethod
 	def test_open_files_and_folders_privacy_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening files and folders tab...")
 
@@ -816,6 +877,8 @@ class Privacy:
 
 		time.sleep(2)
 		print("Files and folders tab successfully opened.")
+
+		i.tearDown()
 
 
 	@staticmethod
@@ -828,82 +891,56 @@ class Privacy:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_location_services_privacy_settings()
 		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
-		i.test_open_location_services_privacy_settings()
 		i.test_location_services_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_contacts_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_calendars_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_reminders_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_photos_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_blutooth_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_microphone_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_camera_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_homekit_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_speech_recognition_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_apple_music_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_open_files_and_folders_privacy_settings()
-		i.tearDown()
 
 		print("===============================================================")
 		print("===============================================================")
@@ -921,99 +958,4 @@ class Privacy:
 # =====================================================================
 # Tests:
 i = Privacy()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_location_services_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_location_services_privacy_settings()
-# i.test_location_services_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_contacts_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_calendars_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_reminders_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_photos_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_blutooth_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_microphone_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_camera_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_homekit_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_speech_recognition_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_apple_music_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_open_files_and_folders_privacy_settings()
-# i.tearDown()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

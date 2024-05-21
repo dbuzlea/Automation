@@ -29,22 +29,7 @@ cd $PATH/Automation
 bash install.sh
 ```
 - Once complete, you can start running all files from Terminal!
-
-
-# /Examples
-Consist of mostly experimental files that utilizes both selenium and pyautogui.
-
-### Steps to run a file inside Terminal for beginners:
-
-- cd to /Examples/
 ```
-cd Examples
-```
-- To run a file inside /Examples folder (replace the <file_name> with the name of the file):
-```
-python3 <file_name>.py
-```
-
 
 # /UI Testing:
 

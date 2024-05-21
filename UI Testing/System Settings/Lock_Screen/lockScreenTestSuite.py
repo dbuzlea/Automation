@@ -40,6 +40,9 @@ class LockScreen:
 # Start Screen Saver when inactive
 	@staticmethod
 	def test_select_start_screen_saver_when_inactive_screen_saver_setting():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening start screen saver when inactive drop down menu...")
 
@@ -60,11 +63,16 @@ class LockScreen:
 		time.sleep(2)
 		print("Start screen saver when inactive drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 
 # Turn off display on battery when inactive
 	@staticmethod
 	def test_select_turn_off_display_battery_inactive_screen_saver_setting():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening turn display off on battery when inactive drop down menu...")
 
@@ -85,10 +93,15 @@ class LockScreen:
 		time.sleep(2)
 		print("Turn display off on battery when inactive drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Turn off display on power adapter when inactive
 	@staticmethod
 	def test_select_turn_off_display_power_adapter_inactive_screen_saver_setting():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening turn display off on power adapter when inactive drop down menu...")
 
@@ -109,11 +122,16 @@ class LockScreen:
 		time.sleep(2)
 		print("Turn display off on power adapter when inactive drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 
 # Require password after screen saver begins
 	@staticmethod
 	def test_select_require_password_after_screen_saver_screen_saver_setting():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Opening require password after screen saver begins drop down menu...")
 
@@ -134,10 +152,15 @@ class LockScreen:
 		time.sleep(2)
 		print("Require password after screen saver begins drop down menu successfully collapsed.")
 
+		i.tearDown()
+
 
 # Show message when locked
 	@staticmethod
 	def test_toggle_show_message_when_locked_screen_saver_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON show message when locked...")
 
@@ -158,11 +181,16 @@ class LockScreen:
 		time.sleep(2)
 		print("Show message when locked successfully disabled.")
 
+		i.tearDown()
+
 
 
 # Show the Sleep, Restart, and Shut Down buttons
 	@staticmethod
 	def test_toggle_show_sleep_restart_shutdown_buttons_screen_saver_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF show the Sleep, Restart, and Shut Down buttons...")
 
@@ -183,11 +211,16 @@ class LockScreen:
 		time.sleep(2)
 		print("Show the Sleep, Restart, and Shut Down buttons successfully enabled.")
 
+		i.tearDown()
+
 
 
 # Show password hints
 	@staticmethod
 	def test_toggle_show_password_hints_screen_saver_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON show password hints...")
 
@@ -208,6 +241,8 @@ class LockScreen:
 		time.sleep(2)
 		print("Show password hints successfully disabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def lockScreenTestSuite():
@@ -219,45 +254,31 @@ class LockScreen:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_start_screen_saver_when_inactive_screen_saver_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_turn_off_display_battery_inactive_screen_saver_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_turn_off_display_power_adapter_inactive_screen_saver_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_select_require_password_after_screen_saver_screen_saver_setting()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_toggle_show_message_when_locked_screen_saver_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_toggle_show_sleep_restart_shutdown_buttons_screen_saver_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_toggle_show_password_hints_screen_saver_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
@@ -270,71 +291,4 @@ class LockScreen:
 		print("===============================================================")
 		return							
 
-
-
-
-
-# =====================================================================
-# Tests:
 i = LockScreen()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_start_screen_saver_when_inactive_screen_saver_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_turn_off_display_battery_inactive_screen_saver_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_turn_off_display_power_adapter_inactive_screen_saver_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_select_require_password_after_screen_saver_screen_saver_setting()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_toggle_show_message_when_locked_screen_saver_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_toggle_show_sleep_restart_shutdown_buttons_screen_saver_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_toggle_show_password_hints_screen_saver_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
-

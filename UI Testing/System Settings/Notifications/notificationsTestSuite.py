@@ -35,8 +35,12 @@ class Notifications:
 		os.system("pkill -a 'System Settings'")
 
 
+
 	@staticmethod
 	def test_show_previews_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Selecting Show Previews drop down menu...")
 
@@ -46,9 +50,14 @@ class Notifications:
 		time.sleep(2)
 		print("Show Previews drop down menu successfully opened.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_ON_display_sleeping_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON Notifications when display is sleeping...")
 
@@ -58,9 +67,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications when display is sleeping successfully enabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_OFF_display_sleeping_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF Notifications when display is sleeping...")
 
@@ -70,9 +84,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications when display is sleeping successfully disabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_OFF_screen_locked_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF Notifications when screen is locked...")
 
@@ -80,11 +99,16 @@ class Notifications:
 		py.click()
 
 		time.sleep(2)
-		print("Notifications when screen is locked successfully disabled.")			
+		print("Notifications when screen is locked successfully disabled.")	
+
+		i.tearDown()		
 				
 
 	@staticmethod
 	def test_turn_ON_screen_locked_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON Notifications when screen is locked...")
 
@@ -94,9 +118,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications when screen is locked successfully enabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_ON_mirroring_screenSharing_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON Notifications when mirroring or sharing display...")
 
@@ -106,9 +135,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications when mirroring or sharing display successfully enabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_OFF_mirroring_screenSharing_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF Notifications when mirroring or sharing display...")
 
@@ -118,9 +152,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications when mirroring or sharing display successfully disabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_ON_app_store_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON Notifications for App Store...")
 
@@ -135,9 +174,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications for App Store successfully enabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_OFF_app_store_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF Notifications for App Store...")
 
@@ -152,9 +196,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications for App Store successfully disabled.")	
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_ON_books_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON Notifications for Books...")
 
@@ -169,9 +218,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications for Books successfully enabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_OFF_books_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF Notifications for Books...")
 
@@ -186,9 +240,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications for Books successfully disabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_ON_calendar_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning ON Notifications for Calendar...")
 
@@ -203,9 +262,14 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications for Calendar successfully enabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def test_turn_OFF_calendar_notifications_settings():
+
+		i.setUp()
+
 		time.sleep(1)
 		print("Turning OFF Notifications for Calendar...")
 
@@ -220,6 +284,8 @@ class Notifications:
 		time.sleep(2)
 		print("Notifications for Calendar successfully disabled.")
 
+		i.tearDown()
+
 
 	@staticmethod
 	def notificationsTestSuite():
@@ -231,69 +297,47 @@ class Notifications:
 		print("===============================================================")
 		print("===============================================================")
 
-		i.setUp()
 		i.test_show_previews_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_ON_display_sleeping_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_OFF_display_sleeping_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_OFF_screen_locked_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_ON_screen_locked_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_ON_mirroring_screenSharing_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_OFF_mirroring_screenSharing_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_ON_app_store_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_OFF_app_store_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_ON_books_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
-		i.setUp()
 		i.test_turn_OFF_books_notifications_settings()
-		i.tearDown()
 
 		print("===============================================================")
 
@@ -310,88 +354,4 @@ class Notifications:
 # =====================================================================
 # Tests:
 i = Notifications()
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Beginning test suite...")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# i.setUp()
-# i.test_show_previews_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_ON_display_sleeping_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_OFF_display_sleeping_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_OFF_screen_locked_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_ON_screen_locked_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_ON_mirroring_screenSharing_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_OFF_mirroring_screenSharing_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_ON_app_store_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_OFF_app_store_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_ON_books_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# i.setUp()
-# i.test_turn_OFF_books_notifications_settings()
-# i.tearDown()
-
-# print("===============================================================")
-
-# print("===============================================================")
-# print("===============================================================")
-
-# print("Test suite completed.")
-
-# print("===============================================================")
-# print("===============================================================")
-
-
 

@@ -135,7 +135,7 @@ class InternetAccounts:
 
 		# time.sleep(TIME_LIMIT)
 
-		print("Mail account successfully added.")
+		# print("Mail account successfully added.")
 
 		i.tearDown()
 
