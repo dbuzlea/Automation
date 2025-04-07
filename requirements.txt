@@ -1,3 +1,4 @@
 # requirements.txt
 PyAutoGUI==0.9.53
 selenium==4.0.0
+pytest==8.3.5
